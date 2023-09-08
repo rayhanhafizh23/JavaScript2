@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSJSJSJS</title>
+</head>
+<body>
+    <div>
+        <h1 id="hasil">hasil</h1>
+        <input type="numnber" id="bil1">
+        <input type="number" id="bil2">
+        <button onclick="hasil()"> Jumlah</button>
+    </div>
+    <div>
+        <h1 id="saya">Nama Saya</h1>
+        <input type="text" name="" id="aku">
+        <button onclick="namasaya()">Nama Saya</button>
+    </div>
+    <h1 id="nama">nama</h1>
+    <button onclick="nama()">Nama</button>
+</body>
+<script>
+    function nama(){
+        document.getElementById('nama').innerHTML="namaku rayhan";
+    }
+    function hasil(){
+        let a=document.getElementById('bil1').value;
+        let b=document.getElementById('bil2').value;
+        let hasil=parseInt(a)+parseInt(b);
+        document.getElementById('hasil').innerHTML=hasil;
+    }
+    function namasaya(){
+        document.getElementById('saya').innerHTML=document.getElementById('aku').value
+    }
+</script>
+</html>
